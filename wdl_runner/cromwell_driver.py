@@ -40,7 +40,7 @@ class CromwellDriver(object):
     self.cromwell_proc = subprocess.Popen([
         'java',
         '-Dconfig.file=' + self.cromwell_conf,
-        '-Xmx4g',
+        '-Xmx96g',
         '-jar', self.cromwell_jar,
         'server'])
 
